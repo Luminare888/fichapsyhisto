@@ -1,0 +1,35 @@
+.PsyFicha {
+    --fuente2: 'Kleemax';
+    --fuente1: 'Poppins';
+    --acento1:#A230BE;
+    --acento2:#6F2B8C;
+    --acento3:#351C40;
+    --blanco:#fff;
+    --negro:#000;
+    --gris:#282828;
+    --gradient1:linear-gradient(181deg, var(--acento1), var(--acento3) 60%);
+    --gradient2:linear-gradient(90deg, var(--acento2), var(--acento3));
+    --gradient3:linear-gradient(45deg, black, var(--gris));
+    --ninja:url(https://i.servimg.com/u/f10/19/83/90/79/evol_610.png); 
+    --psylocke:url(https://i.servimg.com/u/f10/19/83/90/79/ddu7s910.png);
+  }
+  
+  @font-face { font-family: "Kleemax"; src: url( https://dl.dropboxusercontent.com/scl/fi/c9sebz6zkhs473dyn9j51/KleemaxDEMO.ttf?rlkey=4u5fb3ly3f4oq2f0fq7lsgpdu&st=h76budx4&dl=0); font-weight: 300; font-style: normal; }
+  @font-face {
+    font-family: 'Poppins';
+    src: url(Poppins-Medium.ttf);
+  }
+  
+  .PsyFicha ::-webkit-scrollbar { width: 5px; height:5px; border-radius:5px;}
+  .PsyFicha ::-webkit-scrollbar-track { background-color: var(--negro); border-radius:5px;}
+  .PsyFicha ::-webkit-scrollbar-thumb { background: var(--acento3); border-radius:10px;}
+  
+  .PsyFicha { margin:20px auto 20px; display: grid; width:750px; height: 310px; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(5, 1fr); grid-column-gap: 0px; grid-row-gap: 5px; }
+  .PsyFicha br { display:none; }
+  .BotBack { grid-area: 1 / 1 / 6 / 4; background:var(--gradient2); border-radius:10px; height: 300px; margin-top: 0px }
+
+.Psyimasmall { grid-area: 1 / 1 / 6 / 2; z-index:1; background-image:var(--ninja); background-size: cover; background-repeat:no-repeat; background-position:-30px 50%; width:280px; height:300px; display:flex; align-items:center; justify-content:center; margin-top: 0px}
+.psyicon { width:170px; height:170px; border-radius:10px; outline:5px solid var(--acento3); background-size: cover}
+.Psyhistory { grid-area: 1 / 2 / 6 / 4; z-index:1; width:450px; height:200px; margin-right:-50px; padding-top:10px;}
+.Psyhistory h5 { font-family:var(--fuente2); font-size:40px; color:var(--negro); text-align:center; line-height: 40px; margin-top: 15px}
+.psyhisto { height:135px; font-family:var(--fuente1); font-size:12px; overflow:auto; color:var(--blanco); text-align:justify; padding-right:10px; display: flex; flex-flow: column; gap: 5px; list-style: none; }
